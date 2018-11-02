@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>{{ config.title }}</title>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link rel="stylesheet" href="styles.css">
+	{% block scripts %}
+		<script type="text/javascript" src="app.js"></script>
+	{% endblock scripts %}
+</head>
+<body>
+	<header>
+		<h4>Jonathan Feng</h4>
+		<a href="/photos">Photos</a>
+		<a href="/blog">Blog</a>
+		<a href="/about">About</a>
+	</header>
+	<main>
+		{% block main %}
+		{% endblock main %}
+	</main>
+</body>
+</html>
