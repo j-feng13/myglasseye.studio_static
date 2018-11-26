@@ -1,9 +1,11 @@
 $main-color: #003FA3;
 $max-width: 1200px;
+@import url('https://fonts.googleapis.com/css?family=Muli:600');
 
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Muli', sans-serif;
 }
 
 .container {
