@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block main %}
+	<section class="blog__section">
+		<h1>Posts</h1>
+		<section class="blog__posts">
+			{% for page in section.pages %}
+				<section class="blog__section_post">
+					<h2>{{ page.title }}</h2>
+					<img src={{ page.extra.hero_image }}></img>
+					<p>{{ page.description }}</p>
+				</section>	
+			{% endfor %}
+		</section>
+	</section>
+{% endblock main %}
+
+
